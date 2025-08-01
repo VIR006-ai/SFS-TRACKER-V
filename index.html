@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SFS Mission Control</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <h1>🚀 Spaceflight Mission Control</h1>
+
+    <div class="telemetry">
+      <p>Altitude: <span id="altitude">0 km</span></p>
+      <p>Speed: <span id="speed">0 m/s</span></p>
+      <p>Apoapsis: <span id="apo">0 km</span></p>
+      <p>Periapsis: <span id="peri">0 km</span></p>
+      <p>Mission Time: <span id="mission-time">T+ 00:00:00</span></p>
+    </div>
+
+    <div class="sliders">
+      <label>Fuel: <span id="fuel">100%</span></label>
+      <input type="range" id="fuel-slider" min="0" max="100" value="100">
+
+      <label>Throttle: <span id="throttle-status">Idle</span></label>
+      <input type="range" id="throttle-slider" min="0" max="100" value="0">
+    </div>
+
+    <div class="controls">
+      <button id="toggle-theme">🌓 Toggle Theme</button>
+      <button id="fullscreen">⛶ Fullscreen</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
